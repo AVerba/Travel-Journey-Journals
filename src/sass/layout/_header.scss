@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  height: 64px;
+  background-color: #1D346A;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    margin-right: 9px;
+  }
+
+  &__text p {
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(32 / 28);
+    color: #FFFFFF;
+  }
+}
+
+
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 38px;
+  }
+
+  &__link {
+    color: #FFF;
+    font-family: Nexa Bold, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}

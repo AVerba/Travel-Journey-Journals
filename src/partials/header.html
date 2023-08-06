@@ -1,3 +1,42 @@
-<header>
-  <p>HEADER</p>
+<header class="header">
+  <div class="header__container container">
+    <a href="#home" class="header__logo logo">
+      <div class="logo__text">
+        <p>Journey</p>
+        <p>Journals</p>
+      </div>
+      <picture>
+        <source srcset="
+                       ./images/header/logo.webp 1x,
+                       ./images/header/logo@2x.webp 2x"
+                type="image/webp"
+                media="(min-width:1280px )">
+        <source srcset="
+                      ./images/header/logo.png 1x,
+                      ./images/header/logo@2x.png 2x"
+                media="(min-width: 1280px)">
+
+        <img class="logo-img" src="./images/header/logo.png" alt="logo" width="32">
+      </picture>
+    </a>
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#home" class="menu__link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="#description" class="menu__link">Destination</a>
+        </li>
+        <li class="menu__item">
+          <a href="#about" class="menu__link">About Us</a>
+        </li>
+        <li class="menu__item">
+          <a href="#pages" class="menu__link">Pages</a>
+        </li>
+        <li class="menu__item">
+          <a href="#blog" class="menu__link">Blog</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
