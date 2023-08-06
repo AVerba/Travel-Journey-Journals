@@ -2,7 +2,7 @@
   "name": "Travel-Journey-Journals",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://AVerba.github.io/Travel-Journey-Journals",
+  "homepage": "https://AVerba.github.io/Travel-Journey-Journals/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Travel-Journey-Journals/"
