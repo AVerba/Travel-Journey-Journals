@@ -1,0 +1,30 @@
+{
+  "name": "Travel-Journey-Journals",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://AVerba.github.io/Travel-Journey-Journals",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /Travel-Journey-Journals/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AVerba/Travel-Journey-Journals.git"
+  },
+  "keywords": [],
+  "author": "Oleksii V. <alverba88@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AVerba/Travel-Journey-Journals/issues"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
