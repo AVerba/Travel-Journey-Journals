@@ -2,6 +2,16 @@
   background-color: var(--primary-bg-color);
   margin-top: 282px;
 
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 
   &__btn {
     border-radius: 15px;
@@ -17,9 +27,29 @@
   }
 }
 
+.img__item {
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0px 60px 100px -39px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.img__item:first-child {
+  min-width: 394px;
+}
+
+.img__item:last-child {
+  min-width: 259px;
+}
+
+.img__item:not(:last-child) {
+  margin-right: 41px;
+}
+
 .content {
   display: flex;
   flex-direction: column;
+  padding: 0 77px;
 
   &__title {
     color: #363636;
@@ -55,6 +85,7 @@
 }
 
 .btn {
+  width: 143px;
   color: #FFF;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Montserrat, sans-serif;
