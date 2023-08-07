@@ -20,10 +20,15 @@
 
   &__subscribe {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: collection-color(banner-bg-color);
     background-image: url("../images/footer/background.jpg");
     @include background-pos();
-    height: 409px;
+    padding: 105px 0 95px 0;
+
   }
 
   &__title {
@@ -34,12 +39,57 @@
     font-style: normal;
     font-weight: 600;
     line-height: calc(56 / 50); /* 112% */
-    margin-top: 105px;
-
-
   }
 
   &__info {
     height: 395px;
   }
+}
+
+.subscr-email {
+
+  &__form {
+    margin-top: 72px;
+  }
+
+  &__input {
+    min-width: 707px;
+    border-radius: 8px 0 0 8px;
+    background: #FFF;
+    padding: 29px 41px;
+  }
+
+  &__input::placeholder {
+    color: #363636;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(24 / 16); /* 150% */
+  }
+
+  &__btn {
+    background-color: #00A0B1;
+    padding: 29px 48px;
+    border-radius: 0 8px 8px 0;
+    margin-left: -3px;
+  }
+
+  &__btn:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  }
+
+  &__btn:active {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  }
+
+
 }
