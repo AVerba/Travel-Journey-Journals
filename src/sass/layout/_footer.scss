@@ -1,0 +1,45 @@
+.footer {
+  &__container {
+    width: 100%;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #00A0B1;
+    //align-items: center;
+    //justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__subscribe {
+    margin: 0 auto;
+    background-color: collection-color(banner-bg-color);
+    background-image: url("../images/footer/background.jpg");
+    @include background-pos();
+    height: 409px;
+  }
+
+  &__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(56 / 50); /* 112% */
+    margin-top: 105px;
+
+
+  }
+
+  &__info {
+    height: 395px;
+  }
+}
