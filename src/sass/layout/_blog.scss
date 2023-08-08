@@ -1,5 +1,6 @@
 .blog {
   margin-top: 120px;
+
   &__container {
     width: 100%;
     display: flex;
@@ -26,7 +27,95 @@
     font-weight: 600;
     line-height: calc(72 / 67); /* 107.463% */
     margin-top: 12px;
+    margin-bottom: 88px;
     padding: 0 140px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+  }
+
+  &__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+.b-item {
+  display: flex;
+  border-radius: 11px 11px 0 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &__img {
+    width: 90%;
+    border-radius: 11px 11px 0 0;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: 0 10px;
+    padding-bottom: 10px;
+  }
+
+  &__title {
+    color: #00A0B1;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(24 / 16); /* 150% */
+  }
+
+  &__subtitle {
+    color: var(--for-font, #363636);
+    font-family: Montserrat, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(24 / 21); /* 114.286% */
+    margin-top: 22px;
+  }
+
+  &__decsr {
+    color: var(--paragraph, #767681);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(24 / 16); /* 150% */
+    margin-top: 10px;
+  }
+
+  &__link {
+    display: flex;
+    width: 150px;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(24 / 16); /* 150% */
+
+    border-radius: 8px;
+    background: #00A0B1;
+    box-shadow: 0px 60px 100px -39px rgba(0, 0, 0, 0.15);
+
+    padding: 9px 20px;
+    margin-top: 13px;
+  }
+
+  &__link:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
 }
