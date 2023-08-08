@@ -1,6 +1,6 @@
 # Travel Journey Journals
 ## About
-This landing page is of Travel Agency, Tour Agency, Trip, Vacation, SaaS for travel, and the like.
+This landing Desktop page is of Travel Agency, Tour Agency, Trip, Vacation, SaaS for travel, and the like.
 
 ![preview](./assets/Cover.jpg)
 ## Technology stack
