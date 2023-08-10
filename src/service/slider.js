@@ -1,21 +1,71 @@
+const packagesSw = document.querySelector('.packages__swiper');
 
-const swiper_packages = new Swiper(".packages__swiper", {
-  slidesPerView: 3,
-  spaceBetween: 84,
-  loop: true,
 
+console.log(packagesSw);
+
+const gallary = new Swiper('.gallary', {
+
+  //! Основные настройки
+  direction: 'horizontal', // 'vertical', 'horizontal'
+  loop: true, // true - круговой слайдер, false - слайдер с конечными положениями
+  spaceBetween: 20, // расстояние между слайдами
+  slidesPerView: 3, // кол-во активных слайдов
+  // slidesPerGroup: 3, // кол-во пролистываемых слайдов
+
+  //! Кнопки вперед и назад
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.btn-next',
+    prevEl: '.btn-prev',
+  },
+
+  //! Адаптив слайдера
+  breakpoints: {
+    1251: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+
+    951: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+
+    0: {
+      spaceBetween: 0,
+      slidesPerView: 1,
+    },
   },
 });
-const swiper = new Swiper(".destinations__swiper", {
-  slidesPerView: 3,
-  spaceBetween: 84,
-  loop: true,
+const packagesGallary = new Swiper('.packages__gallary', {
 
+  //! Основные настройки
+  direction: 'horizontal', // 'vertical', 'horizontal'
+  loop: true, // true - круговой слайдер, false - слайдер с конечными положениями
+  spaceBetween: 20, // расстояние между слайдами
+  slidesPerView: 3, // кол-во активных слайдов
+  // slidesPerGroup: 3, // кол-во пролистываемых слайдов
+
+  //! Кнопки вперед и назад
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.packages__btn-next',
+    prevEl: '.packages__btn-prev',
+  },
+
+  //! Адаптив слайдера
+  breakpoints: {
+    1251: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+
+    951: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+
+    0: {
+      spaceBetween: 0,
+      slidesPerView: 1,
+    },
   },
 });

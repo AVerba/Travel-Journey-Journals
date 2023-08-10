@@ -1,5 +1,6 @@
 .packages {
   margin-top: 120px;
+
   &__container {
     width: 100%;
     display: flex;
@@ -29,4 +30,60 @@
     padding: 0 140px;
   }
 
+  &__swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    position: relative;
+    padding: 0 80px;
+  }
+
+  &__gallary {
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  &__gallary .swiper-wrapper {
+    box-sizing: content-box;
+  }
+
+  &__slide {
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+
+  &__btn-next, &__btn-prev {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: #00A0B1;
+    border-radius: 12px;
+    z-index: 10;
+    color: white;
+    cursor: pointer;
+  }
+
+  &__btn-next {
+    right: -25px;
+  }
+
+  &__btn-prev {
+    left: 25px;
+  }
 }
