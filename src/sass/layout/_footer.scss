@@ -42,8 +42,70 @@
   }
 
   &__info {
-    height: 395px;
-    padding: 111px 0 117px 0;
+    padding: 111px 23px 117px 23px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-info {
+    max-width: 447px;
+  }
+
+  &__info-list {
+    display: flex;
+    align-items: start;
+  }
+
+  &__info-item:not(:last-child) {
+    margin-right: 72px;
+  }
+
+  &__logo-descr {
+    margin-top: 23px;
+    min-width: 447px;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(24 / 16); /* 150% */
+  }
+}
+
+.fi {
+  &__title {
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(24 / 21); /* 114.286% */
+
+  }
+
+  &__list {
+    margin-top: 13px;
+  }
+
+  &__item {
+    min-width: 106px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
+  &__link {
+    min-width: 106px;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Main Text/P1 400 */
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(24 / 16); /* 150% */
   }
 }
 
