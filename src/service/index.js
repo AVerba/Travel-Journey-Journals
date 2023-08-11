@@ -1,4 +1,2 @@
-
-
 import './app';
 import './slider';
