@@ -1,6 +1,6 @@
 .main {
   margin: 0 auto;
-  background-color: collection-color(banner-bg-color);
+  //background-color: collection-color(banner-bg-color);
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../images/hero/background.jpg");
   @include background-pos();
   height: 890px;
@@ -20,7 +20,7 @@
     font-size: 90px;
     font-style: normal;
     font-weight: 600;
-    line-height: calc (104 / 90); /* 115.556% */
+    line-height: calc(104 / 90); /* 115.556% */
     color: #FFF;
     padding: 0 239px;
   }

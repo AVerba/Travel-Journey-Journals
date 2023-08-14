@@ -18,9 +18,10 @@
     "url": "https://github.com/AVerba/Travel-Journey-Journals/issues"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+
     "handlebars": "^4.7.8",
-    "modern-normalize": "^1.1.0",
-    "swiper": "^10.1.0"
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

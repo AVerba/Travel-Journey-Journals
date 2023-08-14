@@ -1,13 +1,12 @@
-const packagesSw = document.querySelector('.packages__swiper');
+const destinationsSw = document.querySelector('.destinations__gallery'),
+  packagesSw = document.querySelector('.packages__gallery');
 
 
-console.log(packagesSw);
-
-const gallary = new Swiper('.gallary', {
+const destinations = new Swiper(destinationsSw, {
 
   direction: 'horizontal', // 'vertical', 'horizontal'
   loop: true,
-  spaceBetween: 87,
+  spaceBetween: 84,
   slidesPerView: 3,
 
   navigation: {
@@ -32,7 +31,7 @@ const gallary = new Swiper('.gallary', {
     },
   },
 });
-const packagesGallary = new Swiper('.packages__gallary', {
+const packagesGallery = new Swiper(packagesSw, {
 
   direction: 'horizontal',
   loop: true,
