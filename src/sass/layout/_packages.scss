@@ -53,13 +53,17 @@
   }
 
   &__slide {
-    background-color: tomato;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
-    width: auto;
-    height: auto;
+    padding: 46px 44px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__slide:hover {
+    background-color: #00A0B1;
   }
 
   &__btn-next, &__btn-prev {
@@ -86,4 +90,113 @@
   &__btn-prev {
     left: 25px;
   }
+
+  &__card-title {
+    color: #363636;
+    font-family: Montserrat, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(24 / 21); /* 114.286% */
+  }
+
+  .packages__slide:hover &__card-title {
+    color: #FFFFFF;
+  }
+
+  &__price {
+    margin-top: 21px;
+    color: #00A0B1;
+    font-family: Lato, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: calc(1 / 1);
+    text-transform: uppercase;
+  }
+
+  .packages__slide:hover &__price {
+    color: #FFFFFF;
+  }
+
+  &__people-info {
+    margin-top: 6px;
+    color: rgba(161, 161, 161, 0.90);
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(1 / 1);
+    text-transform: capitalize;;
+  }
+
+  .packages__slide:hover &__people-info {
+    color: #FFFFFF;
+  }
+
+  &__link {
+
+    color: #FFF;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    border-radius: 8px;
+    background: #00A0B1;
+    box-shadow: 0px 60px 100px -39px rgba(0, 0, 0, 0.15);
+    margin-top: 32px;
+    padding: 10px 24px;
+  }
+
+  .packages__slide:hover &__link {
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
 }
+
+.p-info {
+  margin-top: 47px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-left: 22px;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Lato, sans-serif;
+      color: rgba(161, 161, 161, 0.90);
+      font-size: 16px;
+      fill: #A1A1A1E5;
+      font-style: normal;
+      font-weight: 400;
+      line-height: calc(24 / 16); /* 150% */
+    }
+
+  }
+
+  .packages__slide:hover &__item {
+    fill: #FFFFFF;
+
+    p {
+      color: #FFFFFF;
+    }
+
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.active {
+  color: #363636;
+  fill: #00A0B1;
+}
+
