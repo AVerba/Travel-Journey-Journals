@@ -180,6 +180,15 @@
     }
 
   }
+  &__item.active  {
+    .p-info__icon{
+      color: #00A0B1;
+    }
+    p{
+      color: #363636;
+    }
+
+  }
 
   .packages__slide:hover &__item {
     fill: #FFFFFF;
@@ -193,10 +202,13 @@
   &__item:not(:last-child) {
     margin-bottom: 15px;
   }
-}
+  &__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    color: #A1A1A1E5;
+  }
 
-.active {
-  color: #363636;
-  fill: #00A0B1;
 }
-

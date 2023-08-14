@@ -110,6 +110,7 @@
   &__location {
     display: flex;
     justify-content: start;
+    align-items: center;
     margin-top: 42px;
     color: rgba(161, 161, 161, 0.60);
     font-family: Nexa Bold, sans-serif;
@@ -160,7 +161,10 @@
 }
 
 .location-icon {
-  width: 11px;
-  height: 12px;
-  fill: #00A0B1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  color: #00A0B1;
 }
