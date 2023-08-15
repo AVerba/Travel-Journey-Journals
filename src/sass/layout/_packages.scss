@@ -8,24 +8,29 @@
     justify-content: center;
   }
 
+  &__title,
+  &__subtitle,
+  &__card-title,
+  &__price,
+  &__people-info,
+  &__link {
+    font-family: Montserrat, sans-serif;
+  }
+
   &__title {
     color: #00A0B1;
     text-align: center;
-    font-family: Montserrat, sans-serif;
     font-size: 28px;
-    font-style: normal;
     font-weight: 600;
-    line-height: calc(32 / 28); /* 114.286% */
+    line-height: 1.143;
   }
 
   &__subtitle {
     color: #363636;
     text-align: center;
-    font-family: Montserrat, sans-serif;
     font-size: 67px;
-    font-style: normal;
     font-weight: 600;
-    line-height: calc(72 / 67); /* 107.463% */
+    line-height: 1.075;
     margin-top: 12px;
     padding: 0 140px;
   }
@@ -46,10 +51,10 @@
     width: 100%;
     height: auto;
     overflow: hidden;
-  }
 
-  &__gallery .swiper-wrapper {
-    box-sizing: content-box;
+    .swiper-wrapper {
+      box-sizing: content-box;
+    }
   }
 
   &__slide {
@@ -60,16 +65,23 @@
     flex-direction: column;
     padding: 46px 44px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: #00A0B1;
+
+      &__card-title,
+      &__price,
+      &__people-info,
+      &__link {
+        color: #FFFFFF;
+      }
+    }
   }
 
-  &__slide:hover {
-    background-color: #00A0B1;
-  }
-
-  &__btn-next, &__btn-prev {
+  &__btn-next,
+  &__btn-prev {
     width: 50px;
     height: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,32 +103,20 @@
     left: 25px;
   }
 
-  &__card-title {
-    color: #363636;
-    font-family: Montserrat, sans-serif;
+  &__card-title,
+  &__price,
+  &__people-info,
+  &__link {
     font-size: 21px;
-    font-style: normal;
     font-weight: 600;
-    line-height: calc(24 / 21); /* 114.286% */
-  }
-
-  .packages__slide:hover &__card-title {
-    color: #FFFFFF;
   }
 
   &__price {
     margin-top: 21px;
     color: #00A0B1;
     font-family: Lato, sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: calc(1 / 1);
+    line-height: 1;
     text-transform: uppercase;
-  }
-
-  .packages__slide:hover &__price {
-    color: #FFFFFF;
   }
 
   &__people-info {
@@ -124,22 +124,13 @@
     color: rgba(161, 161, 161, 0.90);
     font-family: Lato, sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: calc(1 / 1);
-    text-transform: capitalize;;
-  }
-
-  .packages__slide:hover &__people-info {
-    color: #FFFFFF;
+    text-transform: capitalize;
   }
 
   &__link {
-
     color: #FFF;
-    font-family: Lato, sans-serif;
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-transform: capitalize;
@@ -148,13 +139,12 @@
     box-shadow: 0px 60px 100px -39px rgba(0, 0, 0, 0.15);
     margin-top: 32px;
     padding: 10px 24px;
-  }
 
-  .packages__slide:hover &__link {
-    color: #000000;
-    background-color: #FFFFFF;
+    &:hover {
+      color: #000000;
+      background-color: #FFFFFF;
+    }
   }
-
 }
 
 .p-info {
@@ -166,43 +156,41 @@
   &__item {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 
     p {
       margin-left: 22px;
-      font-feature-settings: 'clig' off, 'liga' off;
       font-family: Lato, sans-serif;
       color: rgba(161, 161, 161, 0.90);
       font-size: 16px;
-      fill: #A1A1A1E5;
-      font-style: normal;
       font-weight: 400;
-      line-height: calc(24 / 16); /* 150% */
+      line-height: 1.5; /* 150% */
     }
-
   }
-  &__item.active  {
-    .p-info__icon{
+
+  &__item.active {
+    .p-info__icon {
       color: #00A0B1;
     }
-    p{
+
+    p {
       color: #363636;
     }
-
   }
 
   .packages__slide:hover &__item {
-    fill: #FFFFFF;
-
-    p {
+    .packages__card-title {
       color: #FFFFFF;
     }
 
+    .p-info__icon,
+    p {
+      color: #FFFFFF;
+    }
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 15px;
-  }
-  &__icon{
+
+  &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,5 +198,27 @@
     height: 18px;
     color: #A1A1A1E5;
   }
+}
 
+.packages__slide:hover .packages__card-title,
+{
+
+  color: #FFFFFF;
+}
+
+.packages__slide:hover .packages__price,
+{
+
+  color: #FFFFFF;
+}
+
+.packages__slide:hover .packages__people-info,
+{
+
+  color: #FFFFFF;
+}
+
+.packages__slide:hover .packages__link {
+  background-color: #FFFFFF;
+  color: #363636;
 }
