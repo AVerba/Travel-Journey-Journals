@@ -3,13 +3,11 @@
   margin-top: 282px;
 
   &__container {
-    display: flex;
-    align-items: center;
+    @include flex-center;
   }
 
   &__img {
-    display: flex;
-    align-items: center;
+    @include flex-center;
     width: 100%;
   }
 
@@ -53,37 +51,24 @@
 
   &__title {
     color: #363636;
-    font-family: Montserrat, sans-serif;
+    @include font-montserrat;
     font-size: 67px;
-    font-weight: 600;
     line-height: 1.074;
     margin-top: 24px;
   }
 
   &__subtitle {
     color: #00A0B1;
-    font-family: Montserrat, sans-serif;
+    @include font-montserrat;
     font-size: 28px;
-    font-weight: 600;
     line-height: 1.143;
   }
 
   &__text {
     color: #767681;
-    font-family: Lato, sans-serif;
+    @include font-lato;
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
     margin-top: 24px;
   }
-}
-
-.btn {
-  width: 143px;
-  color: #FFF;
-  font-family: Montserrat, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.5;
-  cursor: pointer;
 }

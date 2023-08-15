@@ -7,8 +7,13 @@
 @mixin font($fz, $lh, $ls) {
   font-size: $fz;
   line-height: $lh / $fz;
-  letter-spacing: $ls;
 }
+
+//@mixin font($fz, $lh, $ls) {
+//  font-size: $fz;
+//  line-height: $lh / $fz;
+//  letter-spacing: $ls;
+//}
 /*=============== Редактирование текста===================*/
 @mixin font-modify($color, $fontSize, $fontWeight, $letterSpacing, $lineHeight) {
   color: $color;
@@ -28,23 +33,27 @@
   margin-left: $gap;
   margin-top: $gap;
 }
+
 /*=============== Добавление размеров ===================*/
 @mixin add-size($width, $height) {
   width: $width;
   height: $height;
 }
+
 /*=============== Редактирование background===================*/
 @mixin background-pos($repeat: no-repeat, $position: center, $size: cover) {
   background-repeat: $repeat;
   background-position: $position;
   background-size: $size;
 }
+
 /*=============== Редактирование псевдо ===================*/
 @mixin pseudo($display: block, $pos: absolute, $content: '') {
   content: $content;
   display: $display;
   position: $pos;
 }
+
 /*=============== Центрирование ===================*/
 @mixin сentering-xy($position: absolute, $left: 50%, $top: 50%) {
   position: $position;
@@ -52,16 +61,19 @@
   top: $top;
   transform: translate(-$left, -$top);
 }
+
 @mixin сentering-x() {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
+
 @mixin сentering-y() {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
+
 /*=============== Миксин для медиазапросов ===================*/
 @mixin for-size($range) {
   @if $range==to-mobile {
@@ -93,13 +105,13 @@
 
 // Add background scss
 
-@mixin bg-im($path, $bgsz){
-  background-image:
-		$path;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: $bgsz;
+@mixin bg-im($path, $bgsz) {
+  background-image: $path;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $bgsz;
 }
+
 @mixin font-montserrat {
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -116,4 +128,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
+}
+
+
+
+@mixin location-icon {
+  @include flex-center;
+  width: 15px;
+  height: 15px;
+  color: #00A0B1;
 }
