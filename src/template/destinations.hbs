@@ -1,0 +1,33 @@
+<section class='destinations'>
+  <div class='container destinations__container'>
+    <h2 class='destinations__title'>Must-Visit Destinations</h2>
+    <p class='destinations__subtitle'>Exploring the Most Popular Gems Around the Globe</p>
+    <div class='destinations__swiper'>
+      <div class='destinations__gallery'>
+        <div class='swiper-wrapper'>
+          {{#each destinations}}
+            <li class='destinations__slide swiper-slide d-item'>
+              <div class='d-item__img'>
+                <img class='_img' src='{{imgSrc}}' alt='{{imgAlt}}' width='286'>
+              </div>
+              <div class='d-item__content'>
+                <div class='d-item__location'>
+                <span class='location-icon'>
+                  <i class='fas fa-map-marker-alt'></i>
+                </span>
+                  <p class='t-item_content'>{{location}}</p>
+                </div>
+                <p class='d-item__title'>{{title}}</p>
+                <p class='d-item__rate'>{{rate}}</p>
+                <p class='d-item__price'>${{price}}</p>
+                <p class='d-item__description'>{{description}}</p>
+              </div>
+            </li>
+          {{/each}}
+        </div>
+      </div>
+      <div class='btn-prev'>Prev</div>
+      <div class='btn-next'>Next</div>
+    </div>
+  </div>
+</section>

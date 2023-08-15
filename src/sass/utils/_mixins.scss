@@ -94,9 +94,26 @@
 // Add background scss
 
 @mixin bg-im($path, $bgsz){
-  background-image: 
+  background-image:
 		$path;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: $bgsz;
+}
+@mixin font-montserrat {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin font-lato {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
