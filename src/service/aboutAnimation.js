@@ -1,21 +1,25 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".img__item").forEach((item, index) => {
-  gsap.from(item, {
+const imgList = document.getElementById('imgList');
+const textContent = document.getElementById('textContent');
+
+const imgItems = imgList.querySelectorAll('.img__item');
+const tl = gsap.timeline();
+
+// Animate img__items from the left
+imgItems.forEach((item, index) => {
+  tl.from(item, {
+    x: -200,
     opacity: 0,
-    x: -20,
     duration: 1,
-    delay: index * 3.5,
-    scrollTrigger: {
-      trigger: ".about__img",
-      start: "top 80%",
-      end: "top 20%",
-      scrub: true,
-      onToggle: self => {
-        if (self.isActive) {
-          gsap.to(item, { opacity: 1, x: 0, duration: 1 });
-        }
-      },
-    },
-  });
+    ease: "power2.out",
+  }, `-=${0.5 * index}`);
 });
+
+// Animate about__content from the right
+tl.from(textContent, {
+  x: 200,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+}, "-=1");
