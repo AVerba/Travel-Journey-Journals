@@ -1,4 +1,5 @@
 import './app';
+import './header';
 import './menu';
 import './aboutAnimation';
 import './aboutAnimation';
