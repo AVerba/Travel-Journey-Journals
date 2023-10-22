@@ -1,3 +1,4 @@
+/*
 gsap.registerPlugin(ScrollTrigger);
 
 const imgList = document.getElementById('imgList');
@@ -22,4 +23,4 @@ tl.from(textContent, {
   opacity: 0,
   duration: 1,
   ease: "power2.out",
-}, "-=1");
+}, "-=1");*/
